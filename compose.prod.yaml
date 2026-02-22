@@ -1,10 +1,6 @@
 services:
   whiteboard:
-    build:
-      context: ./
-      target: final
-    environment:
-      NODE_ENV: production
+    image: marvinalegre/whiteboard:latest
     restart: always
     labels:
       - "traefik.enable=true"

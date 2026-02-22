@@ -9,9 +9,9 @@ services:
       watch:
         - path: ./src
           action: sync
-          target: /usr/local/app/src
+          target: /app/src
         - path: ./public
           action: sync
-          target: /usr/local/app/public
+          target: /app/public
         - path: ./package.json
           action: rebuild
