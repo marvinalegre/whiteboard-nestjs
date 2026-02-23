@@ -90,7 +90,8 @@
 
         // XSS PROTECTION: Using textContent for user input
         const p = document.createElement('p');
-        p.className = 'text-slate-800 text-lg mb-4 break-words italic';
+        p.className =
+          'text-slate-800 text-lg mb-4 break-words italic whitespace-pre-wrap';
         p.textContent = `"${post.content}"`;
 
         const time = document.createElement('div');
